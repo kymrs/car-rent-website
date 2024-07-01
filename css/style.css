@@ -1,0 +1,700 @@
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Root */
+
+:root {
+    --primary: #3563E9;
+    --secondary-500: #1A202C;
+    --secondary-400: #596780;
+    --secondary-300: #90A3BF;
+    --information: #54A6FF;
+    --footer-text: rgba(19, 19, 19, 0.6);
+}
+
+.clear {
+    clear: both;
+}
+
+/* My Style */
+body {
+    font-size: 1.2rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+input::placeholder{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Header */
+.header {
+    margin: 30px 6%;
+}
+
+.header .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .top-bar h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.header .top-bar .search {
+    border: 1px solid rgba(195, 212, 233, 0.4);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 350px;
+    padding: 7px 10px;
+    margin-left: -500px;
+}
+
+.header .top-bar .search .icon {
+    scale: 0.8;
+}
+
+.header .top-bar .search .icon:hover {
+    scale: 0.75;
+}
+
+.header .top-bar .icon {
+    transition: 300ms;
+}
+
+.header .top-bar .icon {
+    cursor: pointer;
+}
+
+.header .top-bar .search input {
+    border: none;
+    width: 270px;
+    color: var(--secondary-500);
+}
+
+.header .top-bar .search input:focus {
+    outline: none;
+}
+
+.header .top-bar .profile-notification {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+}
+
+.header .top-bar .profile-notification .icon {
+    border: 1px solid var(--secondary-300);
+    border-radius: 50px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.header .top-bar .profile-notification .icon img {
+    scale: 0.8;
+}
+
+.header .top-bar .profile-notification .icon .notification-dot {
+    content: "";
+    position: absolute;
+    top: 37px;
+    background-color: rgba(255, 68, 35, 1);
+    width: 8.5px;
+    height: 8.5px;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+.header .top-bar .profile-notification .icon:nth-child(2) {
+    border: 1px solid var(--secondary-300);
+}
+
+.header .top-bar .profile-notification .profile:hover {
+    cursor: pointer;
+}
+
+/* Content */
+.content {
+    padding: 0 6%;
+    background-color: rgba(246, 247, 249, 1);
+}
+
+.content .ads-group {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .ads-group .ads-card1 {
+    background-color: var(--information);
+    background-image: url(../assets/img/bg1.png);
+    background-position: center;
+    background-size: cover;
+    width: 49%;
+    height: 360px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .ads-group .ads-card2 {
+    background-color: var(--primary);
+    background-image: url(../assets/img/bg2.png);
+    background-position: center;
+    background-size: cover;
+    width: 49%;
+    height: 360px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .ads-group .text {
+    width: 60%;
+    color: rgba(255, 255, 255, 1);
+    margin-left: 20px;
+    margin-top: -80px;
+}
+
+.content .ads-group h1 {
+    font-size: 2rem;
+    line-height: 48px;
+    font-weight: 600;
+}
+
+.content .ads-group p {
+    font-size: 1rem;
+    line-height: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.content .ads-group .ads-card1 button {
+    width: 120px;
+    height: 45px;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.content .ads-group .ads-card1 button:hover {
+    background-color: #3562e9a0;
+}
+
+.content .ads-group .ads-card2 button {
+    width: 120px;
+    height: 45px;
+    background-color: var(--information);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.content .ads-group .ads-card2 button:hover {
+   background-color: #54a7ffbc;
+}
+
+/* Pick Drop */
+.pick-drop {
+    margin-top: 30px;
+}
+
+.pick-drop .pick-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pick-drop .pick-up .row {
+    background-color:#fff;
+    border-radius: 10px;
+    padding: 30px 15px 30px 40px;
+}
+
+.pick-drop .pick-up .row .mark {
+    margin-bottom: -2px;
+    margin-right: 5px;
+}
+
+.pick-drop .pick-up .card {
+    display: flex;
+    margin-top: 15px;
+}
+
+.pick-drop p {
+    display: inline-block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: rgba(26, 32, 44, 1);
+    font-weight: 600;
+}
+
+.pick-drop .pick-up .card h1 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: rgba(26, 32, 44, 1);
+    font-weight: 700;
+}
+
+.pick-drop .pick-up .card p {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    color: var(--secondary-300);
+    cursor: pointer;
+}
+
+.pick-drop .pick-up .card img {
+    cursor: pointer;
+}
+
+.pick-drop .pick-up .card div {
+    padding-right: 25px;
+}
+
+.pick-drop .pick-up .card .location, 
+.pick-drop .pick-up .card .date {
+    border-right: 1px solid rgba(195, 212, 233, 0.6);
+}
+
+.pick-drop .pick-up .card .date, 
+.pick-drop .pick-up .card .time {
+    padding-left: 25px;
+}
+
+.pick-drop .pick-up .icon {
+    background-color: var(--primary);
+    scale: 0.8;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.pick-drop .pick-up .icon:hover {
+    scale: 0.75;
+}
+
+/* Catalog Car */
+
+/* Popular */
+
+.catalog-car {
+    margin-top: 60px;
+}
+
+.catalog-car .popular {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog-car .popular p {
+    font-size: 1rem;
+    color: var(--secondary-300);
+}
+
+.catalog-car .popular a {
+    font-size: 1rem;
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.catalog-car .popular a:hover {
+    color: var(--information);
+}  
+
+.catalog-car .popular-car {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.catalog-car .popular-car .card {
+    width: 255px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 30px 25px;
+    margin-bottom: 20px;
+}
+
+.catalog-car .popular-car .card .header-card h1 {
+    font-size: 1.2rem;
+    color: var(--secondary-500);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.catalog-car .popular-car .card .header-card .like {
+    float: right;
+    margin-top: -30px;
+    cursor: pointer;
+}
+
+.catalog-car .popular-car .card .header-card p {
+    font-size: 0.9rem;
+    color: var(--secondary-300);
+    font-weight: 700;
+}
+
+.catalog-car .popular-car .card .image-car {
+    margin: 35px 0 30px;
+    cursor: pointer;
+}
+
+.catalog-car .popular-car .card .image-car .shadow {
+    position: relative;
+    z-index: 2;
+    top: 55px;
+}
+
+.catalog-car .popular-car .card .image-car .car {
+    position: relative;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.catalog-car .popular-car .card .spesification {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog-car .popular-car .card .spesification div {
+    display: flex;
+    align-items: center;
+}
+
+.catalog-car .popular-car .card .spesification p {
+    font-size: 0.9rem;
+    margin-left: 5px;
+    color: var(--secondary-300);
+}
+
+.catalog-car .popular-car .card .footer-card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.catalog-car .popular-car .card .footer-card h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--secondary-500);
+}
+
+.catalog-car .popular-car .card .footer-card span {
+    font-size: 0.9rem;
+    color: var(--secondary-400);
+}
+
+.catalog-car .popular-car .card .footer-card .strike {
+    text-decoration: line-through;
+}
+
+.catalog-car .popular-car .card .footer-card button {
+    padding: 15px 20px;
+    background-color: var(--primary);
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.catalog-car .popular-car .card .footer-card button:hover {
+    scale: 0.95;
+}
+
+/* Recomendation */
+
+.catalog-car .recomendation {
+    display: flex;
+}
+
+.catalog-car .recomendation p {
+    font-size: 1rem;
+    color: var(--secondary-300);
+}
+
+.catalog-car .recomendation a {
+    font-size: 1rem;
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.catalog-car .recomendation a:hover {
+    color: var(--information);
+}  
+
+.catalog-car .recomendation-car {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.catalog-car .recomendation-car .card {
+    width: 255px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 30px 25px;
+    margin-bottom: 25px;
+}
+
+.catalog-car .recomendation-car .card .header-card h1 {
+    font-size: 1.2rem;
+    color: var(--secondary-500);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.catalog-car .recomendation-car .card .header-card .like {
+    float: right;
+    margin-top: -30px;
+    cursor: pointer;
+}
+
+.catalog-car .recomendation-car .card .header-card p {
+    font-size: 0.9rem;
+    color: var(--secondary-300);
+    font-weight: 700;
+}
+
+.catalog-car .recomendation-car .card .image-car {
+    margin: 35px 0 30px;
+    cursor: pointer;
+}
+
+.catalog-car .recomendation-car .card .image-car .shadow {
+    position: relative;
+    z-index: 2;
+    top: 85px;
+}
+
+.catalog-car .recomendation-car .card .image-car .car {
+    position: relative;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.catalog-car .recomendation-car .card .spesification {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog-car .recomendation-car .card .spesification div {
+    display: flex;
+    align-items: center;
+}
+
+.catalog-car .recomendation-car .card .spesification p {
+    font-size: 0.9rem;
+    margin-left: 5px;
+    color: var(--secondary-300);
+}
+
+.catalog-car .recomendation-car .card .footer-card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.catalog-car .recomendation-car .card .footer-card h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--secondary-500);
+}
+
+.catalog-car .recomendation-car .card .footer-card span {
+    font-size: 0.9rem;
+    color: var(--secondary-400);
+}
+
+.catalog-car .recomendation-car .card .footer-card .strike {
+    text-decoration: line-through;
+}
+
+.catalog-car .recomendation-car .card .footer-card button {
+    padding: 15px 20px;
+    background-color: var(--primary);
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.catalog-car .recomendation-car .card .footer-card button:hover {
+    scale: 0.95;
+}
+
+/* Show More */
+
+.show-more {
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 70px;
+}
+
+.show-more button {
+    padding: 15px 20px;
+    background-color: var(--primary);
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.show-more button:hover {
+    scale: 0.95;
+}
+
+.number-of-cars {
+    position: relative;
+    bottom: 100px;
+    float: right;
+    font-size: 0.9rem;
+    color: var(--secondary-300);
+}
+
+/* Footer */
+.footer {
+    background-color: #fff;
+    padding: 70px 6% 0;
+}
+
+.footer .group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .group .logo {
+    width: 30%;
+}
+
+.footer .group .logo h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.footer .group .logo p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    color: rgba(19, 19, 19, 0.6);
+}
+
+.footer .group .link {
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer .group .link h2 {
+    margin-bottom: 30px;
+    color: var(--secondary-500);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.footer .group .link a {
+    display: block;
+    margin-bottom: 25px;
+    text-decoration: none;
+    color: rgba(19, 19, 19, 0.6);
+    font-size: 1rem;
+}
+
+.footer .line {
+    height: 1px;
+    background-color: var(--secondary-300);
+}
+
+.footer .copyright {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    color: var(--secondary-500);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.footer .copyright p {
+    cursor: pointer;
+}
