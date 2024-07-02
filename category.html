@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Car Rent</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="css/category.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Header -->
+    <section id="header" class="header">
+        <div class="top-bar">
+            <h1>MORENT</h1>
+
+            <div class="search">
+                <div class="icon">
+                    <img src="assets/icon/search-normal.png" alt="search">
+                </div>
+                <input type="text" name="search" id="search" placeholder="Search something here">
+                <div class="icon">
+                    <img src="assets/icon/filter.png" alt="filter">
+                </div>
+            </div>
+
+            <div class="profile-notification">
+                <div class="icon">
+                    <img src="assets/icon/heart.png" alt="heart">
+                </div>
+                <div class="icon">
+                    <div class="notification-dot"></div>
+                    <img src="assets/icon/notification.png" alt="notification">
+                </div>
+                <div class="icon">
+                    <img src="assets/icon/setting.png" alt="setting">
+                </div>
+                <div class="profile">
+                    <img src="assets/img/profil.png" alt="profile">
+                </div>
+            </div>
+        </div>
+
+        <div class="extra-bar">
+            <div class="search-bar">
+                <div class="icon">
+                    <img src="assets/icon/search-normal.png" alt="search">
+                </div>
+                <input type="text" name="search" id="search" placeholder="Search something here">
+            </div>
+            <div class="filter-icon">
+                <img src="assets/icon/filter.png" alt="filter">
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="navbar-side" id="navbar-side">
+            <div class="type">
+                <h3>TYPE</h3>
+                <div class="selection">
+                    <input type="checkbox" id="sport">
+                    <a href="#">Sport</a><span> (10)</span>
+                </div>
+                <div class="selection">
+                    <input type="checkbox" id="suv">
+                    <a href="#">Suv</a><span> (12)</span>
+                </div>
+                <div class="selection">
+                    <input type="checkbox" id="mpv">
+                    <a href="#">MPV</a><span> (16)</span>
+                </div>
+                <div class="selection">
+                    <input type="checkbox" id="sedan">
+                    <a href="#">Sedan</a><span> (20)</span>
+                </div>
+                <div class="selection">
+                    <input type="checkbox" id="coupe">
+                    <a href="#">Coupe</a><span> (14)</span>
+                </div>
+                <div class="selection">
+                    <input type="checkbox" id="Hatchback">
+                    <a href="#">Hatchback</a><span> (14)</span>
+                </div>
+            </div>
+            <div class="capacity">
+                <h3>CAPACITY</h3>
+                <div class="selection">
+                    <input type="checkbox" id="sport">
+                    <a href="#">Sport</a><span> (10)</span>
+                </div>
+                <div class="selection">
+                    <input type="checkbox" id="suv">
+                    <a href="#">Suv</a><span> (12)</span>
+                </div>
+                <div class="selection">
+                    <input type="checkbox" id="mpv">
+                    <a href="#">MPV</a><span> (16)</span>
+                </div>
+                <div class="selection">
+                    <input type="checkbox" id="sedan">
+                    <a href="#">Sedan</a><span> (20)</span>
+                </div>
+                <div class="selection">
+                    <input type="checkbox" id="coupe">
+                    <a href="#">Coupe</a><span> (14)</span>
+                </div>
+                <div class="selection">
+                    <input type="checkbox" id="Hatchback">
+                    <a href="#">Hatchback</a><span> (14)</span>
+                </div>
+            </div>
+            <div class="price">
+                <h3>PRICE</h3>
+                <input type="range" min="0" max="100">
+                <p>Max. $<span>50</span>.00</p>
+            </div>
+        </section>
+    
+        <!-- Content -->
+         <section id="content" class="content">
+    
+            <!-- Pick Drop -->
+            <div class="pick-drop">
+                <div class="pick-drop-group">
+                    <div class="row1">
+                        <img src="assets/icon/mark.png" class="mark">
+                        <p>Pick - Up</p>
+                        <div class="card">
+                            <div class="location">
+                                <h1>Locations</h1>
+                                <p>Select your city</p>
+                                <img src="assets/icon/arrow-down.png">
+                            </div>
+                            <div class="date">
+                                <h1>Date</h1>
+                                <p>Select your date</p>
+                                <img src="assets/icon/arrow-down.png">
+                            </div>
+                            <div class="time">
+                                <h1>Time</h1>
+                                <p>Select your time</p>
+                                <img src="assets/icon/arrow-down.png">
+                            </div>
+                        </div>
+                    </div>
+                        <div class="icon"><img src="assets/icon/Swap.png"></div>
+                    <div class="row2">
+                        <img src="assets/icon/mark.png" class="mark">
+                        <p>Drop - Off</p>
+                        <div class="card">
+                            <div class="location">
+                            <h1>Locations</h1>
+                            <p>Select your city</p>
+                            <img src="assets/icon/arrow-down.png">
+                        </div>
+                        <div class="date">
+                            <h1>Date</h1>
+                            <p>Select your date</p>
+                            <img src="assets/icon/arrow-down.png">
+                        </div>
+                        <div class="time">
+                            <h1>Time</h1>
+                            <p>Select your time</p>
+                            <img src="assets/icon/arrow-down.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Catalog Car -->
+             <div class="catalog-car">
+                <div class="recomendation-car">
+                    <div class="card">
+                        <div class="header-card">
+                            <h1>All New Rush</h1>
+                            <div class="like"></div>
+                            <div class="clear"></div>
+                            <p>Suv</p>
+                        </div>
+                        <div class="group">
+                            <div class="image-car">
+                                <img src="assets/img/car/shadow.png" class="shadow">
+                                <img src="assets/img/car/car-4.png" alt="car" class="car">
+                            </div>
+                            <div class="spesification">
+                                <div class="gasoline">
+                                    <img src="assets/icon/gas-station.png" alt="gasoline">
+                                    <p>70L</p>
+                                </div>
+                                <div class="car">
+                                    <img src="assets/icon/Car.png" alt="car">
+                                    <p>Manual</p>
+                                </div>
+                                <div class="capacity">
+                                    <img src="assets/icon/profile-2user.png" alt="gasoline">
+                                    <p>6 People</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-card">
+                            <h1>$72.00/<span>day<br><span class="strike">$80.00</span></span></h1>
+                            <button>Rent Now</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="header-card">
+                            <h1>CR  - V</h1>
+                            <div class="like"></div>
+                            <div class="clear"></div>
+                            <p>Suv</p>
+                        </div>
+                        <div class="group">
+                            <div class="image-car">
+                                <img src="assets/img/car/shadow.png" class="shadow">
+                                <img src="assets/img/car/car-5.png" alt="car" class="car">
+                            </div>
+                            <div class="spesification">
+                                <div class="gasoline">
+                                    <img src="assets/icon/gas-station.png" alt="gasoline">
+                                    <p>80L</p>
+                                </div>
+                                <div class="car">
+                                    <img src="assets/icon/Car.png" alt="car">
+                                    <p>Manual</p>
+                                </div>
+                                <div class="capacity">
+                                    <img src="assets/icon/profile-2user.png" alt="gasoline">
+                                    <p>6 People</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-card">
+                            <h1>$80.00/<span>day</span></h1>
+                            <button>Rent Now</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="header-card">
+                            <h1>All New Terios</h1>
+                            <div class="like"></div>
+                            <div class="clear"></div>
+                            <p>Suv</p>
+                        </div>
+                        <div class="group">
+                            <div class="image-car">
+                                <img src="assets/img/car/shadow.png" class="shadow">
+                                <img src="assets/img/car/car-6.png" alt="car" class="car">
+                            </div>
+                            <div class="spesification">
+                                <div class="gasoline">
+                                    <img src="assets/icon/gas-station.png" alt="gasoline">
+                                    <p>90L</p>
+                                </div>
+                                <div class="car">
+                                    <img src="assets/icon/Car.png" alt="car">
+                                    <p>Manual</p>
+                                </div>
+                                <div class="capacity">
+                                    <img src="assets/icon/profile-2user.png" alt="gasoline">
+                                    <p>6 People</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-card">
+                            <h1>$74.00/<span>day</span></h1>
+                            <button>Rent Now</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="header-card">
+                            <h1>CR  - V</h1>
+                            <div class="like"></div>
+                            <div class="clear"></div>
+                            <p>Suv</p>
+                        </div>
+                        <div class="group">
+                            <div class="image-car">
+                                <img src="assets/img/car/shadow.png" class="shadow">
+                                <img src="assets/img/car/car-7.png" alt="car" class="car">
+                            </div>
+                            <div class="spesification">
+                                <div class="gasoline">
+                                    <img src="assets/icon/gas-station.png" alt="gasoline">
+                                    <p>80L</p>
+                                </div>
+                                <div class="car">
+                                    <img src="assets/icon/Car.png" alt="car">
+                                    <p>Manual</p>
+                                </div>
+                                <div class="capacity">
+                                    <img src="assets/icon/profile-2user.png" alt="gasoline">
+                                    <p>6 People</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-card">
+                            <h1>$80.00/<span>day</span></h1>
+                            <button>Rent Now</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="header-card">
+                            <h1>MG ZX Exclusice</h1>
+                            <div class="like"></div>
+                            <div class="clear"></div>
+                            <p>Hatchback</p>
+                        </div>
+                        <div class="group">
+                            <div class="image-car">
+                                <img src="assets/img/car/shadow.png" class="shadow">
+                                <img src="assets/img/car/car-8.png" alt="car" class="car">
+                            </div>
+                            <div class="spesification">
+                                <div class="gasoline">
+                                    <img src="assets/icon/gas-station.png" alt="gasoline">
+                                    <p>70L</p>
+                                </div>
+                                <div class="car">
+                                    <img src="assets/icon/Car.png" alt="car">
+                                    <p>Manual</p>
+                                </div>
+                                <div class="capacity">
+                                    <img src="assets/icon/profile-2user.png" alt="gasoline">
+                                    <p>4 People</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-card">
+                            <h1>$76.00/<span>day<br><span class="strike">$80.00</span></span></h1>
+                            <button>Rent Now</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="header-card">
+                            <h1>New MG ZS</h1>
+                            <div class="like"></div>
+                            <div class="clear"></div>
+                            <p>Suv</p>
+                        </div>
+                        <div class="group">
+                            <div class="image-car">
+                                <img src="assets/img/car/shadow.png" class="shadow">
+                                <img src="assets/img/car/car-9.png" alt="car" class="car">
+                            </div>
+                            <div class="spesification">
+                                <div class="gasoline">
+                                    <img src="assets/icon/gas-station.png" alt="gasoline">
+                                    <p>80L</p>
+                                </div>
+                                <div class="car">
+                                    <img src="assets/icon/Car.png" alt="car">
+                                    <p>Manual</p>
+                                </div>
+                                <div class="capacity">
+                                    <img src="assets/icon/profile-2user.png" alt="gasoline">
+                                    <p>6 People</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-card">
+                            <h1>$80.00/<span>day</span></h1>
+                            <button>Rent Now</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="header-card">
+                            <h1>MG ZX Excite</h1>
+                            <div class="like"></div>
+                            <div class="clear"></div>
+                            <p>Suv</p>
+                        </div>
+                        <div class="group">
+                            <div class="image-car">
+                                <img src="assets/img/car/shadow.png" class="shadow">
+                                <img src="assets/img/car/car-10.png" alt="car" class="car">
+                            </div>
+                            <div class="spesification">
+                                <div class="gasoline">
+                                    <img src="assets/icon/gas-station.png" alt="gasoline">
+                                    <p>90L</p>
+                                </div>
+                                <div class="car">
+                                    <img src="assets/icon/Car.png" alt="car">
+                                    <p>Manual</p>
+                                </div>
+                                <div class="capacity">
+                                    <img src="assets/icon/profile-2user.png" alt="gasoline">
+                                    <p>4 People</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-card">
+                            <h1>$74.00/<span>day</span></h1>
+                            <button>Rent Now</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="header-card">
+                            <h1>New MG ZS</h1>
+                            <div class="like"></div>
+                            <div class="clear"></div>
+                            <p>Suv</p>
+                        </div>
+                        <div class="group">
+                            <div class="image-car">
+                                <img src="assets/img/car/shadow.png" class="shadow">
+                                <img src="assets/img/car/car-11.png" alt="car" class="car">
+                            </div>
+                            <div class="spesification">
+                                <div class="gasoline">
+                                    <img src="assets/icon/gas-station.png" alt="gasoline">
+                                    <p>80L</p>
+                                </div>
+                                <div class="car">
+                                    <img src="assets/icon/Car.png" alt="car">
+                                    <p>Manual</p>
+                                </div>
+                                <div class="capacity">
+                                    <img src="assets/icon/profile-2user.png" alt="gasoline">
+                                    <p>6 People</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-card">
+                            <h1>$80.00/<span>day</span></h1>
+                            <button>Rent Now</button>
+                        </div>
+                    </div>
+                </div>
+             </div>
+    
+             <div class="show-more">
+                <button>Show more car</button>
+            </div>
+            <p class="number-of-cars">120 car</p>
+         </section>
+    </div>
+
+     <!-- Footer -->
+     <section id="footer" class="footer">
+        <div class="group">
+            <div class="logo">
+                <h1>MORENT</h1>
+                <p>Our vision is to provide convenience and help increase your sales business.</p>
+            </div>
+            <div class="link">
+                <div class="about">
+                    <h2>About</h2>
+                    <a href="#">How it works</a>
+                    <a href="#">Featured</a>
+                    <a href="#">Partnership</a>
+                    <a href="#">Bussiness Relation</a>
+                </div>
+                <div class="community">
+                    <h2>Community</h2>
+                    <a href="#">Events</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Podcast</a>
+                    <a href="#">Invite a friend</a>
+                </div>
+                <div class="about">
+                    <h2>Socials</h2>
+                    <a href="#">Discord</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="copyright">
+            <p>&copy;2022 MORENT. All rights reserved</p>
+            <p>Privacy & Policy</p>
+            <p>Terms & Condition</p>
+            <p>&copy;2022 MORENT. All rights reserved</p>
+        </div>
+
+        </div>
+     </section>
+<script src="js/script-category.js"></script>
+
+</body>
+</html>

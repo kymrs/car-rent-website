@@ -166,96 +166,83 @@ input::placeholder{
     cursor: pointer;
 }
 
-/* Content */
-.content {
-    padding: 0 6%;
+/* Container Content */
+.container {
+    display: flex;
     background-color: rgba(246, 247, 249, 1);
+}
+
+/* Navbar Side */
+.navbar-side {
+    width: 25%;
+    background-color: #fff;
+    min-height: 100%;
+    margin-top: 5px;
+}
+
+.navbar-side input[type="range"] {
+    height: 13px;
+    width: 85%;
+    -webkit-appearance: none;
+    background-color: var(--secondary-300);
+    border-radius: 10px;
     overflow: hidden;
 }
 
-.content .ads-group {
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.content .ads-group .ads-card1 {
-    background-color: var(--information);
-    background-image: url(../assets/img/bg1.png);
-    background-position: center;
-    background-size: cover;
-    width: 49%;
-    height: 360px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.content .ads-group .ads-card2 {
+.navbar-side input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 13px;
+    height: 13px;
+    border-radius: 50px;
     background-color: var(--primary);
-    background-image: url(../assets/img/bg2.png);
-    background-position: center;
-    background-size: cover;
-    width: 49%;
-    height: 360px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.content .ads-group .text {
-    width: 60%;
-    color: rgba(255, 255, 255, 1);
-    margin-left: 20px;
-    margin-top: -80px;
-}
-
-.content .ads-group h1 {
-    font-size: 2rem;
-    line-height: 48px;
-    font-weight: 600;
-}
-
-.content .ads-group p {
-    font-size: 1rem;
-    line-height: 24px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-weight: 500;
-}
-
-.content .ads-group .ads-card1 button {
-    width: 120px;
-    height: 45px;
-    background-color: var(--primary);
-    border: none;
-    border-radius: 7px;
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 1);
-    font-weight: 600;
     cursor: pointer;
+    border: 3px solid #fff;
+    box-shadow: -407px 0 0 400px var(--primary);
+    position: relative;
+    z-index: 1;
 }
 
-.content .ads-group .ads-card1 button:hover {
-    background-color: #3562e9a0;
+.navbar-side h3 {
+    color: var(--secondary-300);
+    font-size: 0.8rem;
+    margin: 20px 0;
 }
 
-.content .ads-group .ads-card2 button {
-    width: 120px;
-    height: 45px;
-    background-color: var(--information);
-    border: none;
-    border-radius: 5px;
+.navbar-side a {
+    color: var(--secondary-500);
+    text-decoration: none;
     font-size: 1rem;
-    color: rgba(255, 255, 255, 1);
     font-weight: 600;
-    cursor: pointer;
 }
 
-.content .ads-group .ads-card2 button:hover {
-   background-color: #54a7ffbc;
+.navbar-side span {
+    color: var(--secondary-400);
+    font-size: 1rem;
+}
+
+.navbar-side .selection {
+    margin-bottom: 15px;
+}
+
+.navbar-side .type,
+.navbar-side .capacity, 
+.navbar-side .price {
+    margin-bottom: 25px;
+    margin-left: 10%;
+}
+
+.navbar-side .price p {
+    font-size: 1.1rem;
+    margin-top: 15px;
+    color: var(--secondary-400);
+    font-weight: 600;
+}
+
+/* Content */
+.content {
+    padding: 0 6% 0 2%;
+    overflow: hidden;
+    width: 75%;
 }
 
 /* Pick Drop */
@@ -344,174 +331,7 @@ input::placeholder{
 
 /* Catalog Car */
 
-/* Popular */
-
-.catalog-car {
-    margin-top: 60px;
-}
-
-.catalog-car .popular {
-    display: flex;
-    justify-content: space-between;
-}
-
-.catalog-car .popular p {
-    font-size: 1rem;
-    color: var(--secondary-300);
-}
-
-.catalog-car .popular a {
-    font-size: 1rem;
-    color: var(--primary);
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.catalog-car .popular a:hover {
-    color: var(--information);
-}  
-
-.catalog-car .popular-car {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.catalog-car .popular-car .card {
-    width: 255px;
-    background-color: #fff;
-    overflow: hidden;
-    border-radius: 10px;
-    padding: 30px 25px;
-    margin-bottom: 20px;
-}
-
-.catalog-car .popular-car .card .header-card h1 {
-    font-size: 1.2rem;
-    color: var(--secondary-500);
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.heart-fill {
-    background-image: url(../assets/icon/Like.png);
-    float: right;
-    margin-top: -30px;
-    cursor: pointer;
-    width: 25px;
-    height: 25px;
-}
-
-.catalog-car .popular-car .card .header-card .like {
-    float: right;
-    margin-top: -30px;
-    cursor: pointer;
-    background-image: url(../assets/icon/Like-1.png);
-    width: 25px;
-    height: 25px;
-}
-
-.catalog-car .popular-car .card .header-card p {
-    font-size: 0.9rem;
-    color: var(--secondary-300);
-    font-weight: 700;
-}
-
-.catalog-car .popular-car .card .image-car {
-    margin: 35px 0 30px;
-    cursor: pointer;
-}
-
-.catalog-car .popular-car .card .image-car .shadow {
-    position: relative;
-    z-index: 2;
-    top: 55px;
-}
-
-.catalog-car .popular-car .card .image-car .car {
-    position: relative;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-.catalog-car .popular-car .card .spesification {
-    display: flex;
-    justify-content: space-between;
-}
-
-.catalog-car .popular-car .card .spesification div {
-    display: flex;
-    align-items: center;
-}
-
-.catalog-car .popular-car .card .spesification p {
-    font-size: 0.9rem;
-    margin-left: 5px;
-    color: var(--secondary-300);
-}
-
-.catalog-car .popular-car .card .footer-card {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-    align-items: center;
-}
-
-.catalog-car .popular-car .card .footer-card h1 {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--secondary-500);
-}
-
-.catalog-car .popular-car .card .footer-card span {
-    font-size: 0.9rem;
-    color: var(--secondary-400);
-}
-
-.catalog-car .popular-car .card .footer-card .strike {
-    text-decoration: line-through;
-}
-
-.catalog-car .popular-car .card .footer-card button {
-    padding: 15px 20px;
-    background-color: var(--primary);
-    border-radius: 10px;
-    border: none;
-    font-size: 1rem;
-    color: #fff;
-    font-weight: 500;
-    cursor: pointer;
-    transition: 300ms;
-}
-
-.catalog-car .popular-car .card .footer-card button:hover {
-    scale: 0.95;
-}
-
 /* Recomendation */
-
-.catalog-car .recomendation {
-    display: flex;
-}
-
-.catalog-car .recomendation p {
-    font-size: 1rem;
-    color: var(--secondary-300);
-}
-
-.catalog-car .recomendation a {
-    font-size: 1rem;
-    color: var(--primary);
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.catalog-car .recomendation a:hover {
-    color: var(--information);
-}  
 
 .catalog-car .recomendation-car {
     margin-top: 30px;
@@ -536,13 +356,22 @@ input::placeholder{
     margin-bottom: 10px;
 }
 
+.heart-fill {
+    background-image: url(../assets/icon/Like.png);
+    float: right;
+    margin-top: -30px;
+    cursor: pointer;
+    width: 23px;
+    height: 23px;
+}
+
 .catalog-car .recomendation-car .card .header-card .like {
     float: right;
     margin-top: -30px;
     cursor: pointer;
     background-image: url(../assets/icon/Like-1.png);
-    width: 25px;
-    height: 25px;
+    width: 23px;
+    height: 23px;
 }
 
 .catalog-car .recomendation-car .card .header-card p {
@@ -632,7 +461,7 @@ input::placeholder{
     padding-bottom: 70px;
 }
 
-.show-more a {
+.show-more button {
     padding: 15px 20px;
     background-color: var(--primary);
     border-radius: 10px;
@@ -642,11 +471,10 @@ input::placeholder{
     font-weight: 500;
     cursor: pointer;
     transition: 300ms;
-    text-decoration: none;
 }
 
-.show-more a:hover {
-    background-color: var(--information);
+.show-more button:hover {
+    scale: 0.95;
 }
 
 .number-of-cars {
@@ -804,6 +632,10 @@ input::placeholder{
 
 /* Tablet */
 @media ( max-width: 768px ){
+    .content {
+        width: 100%;
+    }
+
     .header .top-bar .search {
         margin-left: 0;
     }
@@ -816,11 +648,7 @@ input::placeholder{
         display: none;
     }
     
-    .content .ads-group .ads-card1 {
-        width: 100%;
-    }
-
-    .content .ads-group .ads-card2 {
+    .navbar-side {
         display: none;
     }
 
@@ -888,12 +716,8 @@ input::placeholder{
         outline: none;
     }
 
-    .content .ads-group .text {
-        width: 100%;
-    }
-
-    .content .ads-group .text p {
-        font-size: 1rem;
+    .content {
+        padding: 0 6%;
     }
 
     .catalog-car .popular-car {
