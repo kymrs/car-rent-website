@@ -92,10 +92,14 @@ input::placeholder{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 350px;
     padding: 7px 10px;
     margin-left: -500px;
 }
+
+.header .extra-bar {
+    display: none;
+}
+
 
 .header .top-bar .search .icon {
     scale: 0.8;
@@ -116,6 +120,7 @@ input::placeholder{
 .header .top-bar .search input {
     border: none;
     width: 270px;
+    padding: 0 5px;
     color: var(--secondary-500);
 }
 
@@ -257,24 +262,26 @@ input::placeholder{
     margin-top: 30px;
 }
 
-.pick-drop .pick-up {
+.pick-drop .pick-drop-group {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.pick-drop .pick-up .row {
+.pick-drop .pick-drop-group .row1,
+.pick-drop .pick-drop-group .row2 {
     background-color:#fff;
     border-radius: 10px;
     padding: 30px 15px 30px 40px;
 }
 
-.pick-drop .pick-up .row .mark {
+.pick-drop .pick-drop-group .row1 .mark
+.pick-drop .pick-drop-group .row2 .mark {
     margin-bottom: -2px;
     margin-right: 5px;
 }
 
-.pick-drop .pick-up .card {
+.pick-drop .pick-drop-group .card {
     display: flex;
     margin-top: 15px;
 }
@@ -287,14 +294,14 @@ input::placeholder{
     font-weight: 600;
 }
 
-.pick-drop .pick-up .card h1 {
+.pick-drop .pick-drop-group .card h1 {
     font-size: 1rem;
     margin-bottom: 5px;
     color: rgba(26, 32, 44, 1);
     font-weight: 700;
 }
 
-.pick-drop .pick-up .card p {
+.pick-drop .pick-drop-group .card p {
     font-size: 0.8rem;
     margin-bottom: 5px;
     margin-right: 20px;
@@ -302,34 +309,35 @@ input::placeholder{
     cursor: pointer;
 }
 
-.pick-drop .pick-up .card img {
+.pick-drop .pick-drop-group .card img {
     cursor: pointer;
 }
 
-.pick-drop .pick-up .card div {
+.pick-drop .pick-drop-group .card div {
     padding-right: 25px;
 }
 
-.pick-drop .pick-up .card .location, 
-.pick-drop .pick-up .card .date {
+.pick-drop .pick-drop-group .card .location, 
+.pick-drop .pick-drop-group .card .date {
     border-right: 1px solid rgba(195, 212, 233, 0.6);
 }
 
-.pick-drop .pick-up .card .date, 
-.pick-drop .pick-up .card .time {
+.pick-drop .pick-drop-group .card .date, 
+.pick-drop .pick-drop-group .card .time {
     padding-left: 25px;
 }
 
-.pick-drop .pick-up .icon {
+.pick-drop .pick-drop-group .icon {
     background-color: var(--primary);
     scale: 0.8;
     padding: 20px;
     border-radius: 10px;
     cursor: pointer;
     transition: 300ms;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.pick-drop .pick-up .icon:hover {
+.pick-drop .pick-drop-group .icon:hover {
     scale: 0.75;
 }
 
@@ -686,15 +694,262 @@ input::placeholder{
     background-color: var(--secondary-300);
 }
 
-.footer .copyright {
+.footer .row {
+    display: flex;
+}
+
+.footer .row .privacy {
     display: flex;
     justify-content: space-between;
-    padding: 40px 0;
+    padding: 40px 0 10px;
     color: var(--secondary-500);
     font-size: 1rem;
     font-weight: 600;
 }
 
-.footer .copyright p {
+.footer .row .copyright {
+    display: flex;
+    justify-content: space-between;
+    color: var(--secondary-500);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 20px 0;
+    padding-bottom: 20px;
+}
+
+.footer .row p {
     cursor: pointer;
+}
+
+/* Media Queries */
+
+/* Extra Large */
+@media ( max-width: 1200px ){
+    html {
+        font-size: 75%;
+    }
+
+    .header .top-bar .search {
+        margin-left: -200px;
+    }
+
+    .catalog-car .popular-car {
+        justify-content: space-evenly;
+    }
+
+    .catalog-car .recomendation-car {
+        justify-content: space-evenly;
+    }
+}
+
+/* Laptop */
+@media ( max-width: 992px ){
+    .header .top-bar .search {
+        margin-left: -50px;
+    }
+
+    .header .top-bar .search input {
+        width: 200px;
+    }
+
+    .pick-drop .pick-drop-group {
+        display: inline-block;
+        justify-content: center;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .pick-drop .pick-drop-group .icon {
+        width: 7%;
+        position: relative;
+        z-index: 999;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .pick-drop .pick-drop-group .row1 {
+        position: relative;
+        top: 20px;
+    }
+
+    .pick-drop .pick-drop-group .row2 {
+        position: relative;
+        bottom: 20px;
+    }
+}
+
+/* Tablet */
+@media ( max-width: 768px ){
+    .header .top-bar .search {
+        margin-left: 0;
+    }
+
+    .header .top-bar .profile-notification {
+        width: 150px;
+    }
+
+    .header .top-bar .profile-notification .icon:nth-child(1) {
+        display: none;
+    }
+    
+    .content .ads-group .ads-card1 {
+        width: 100%;
+    }
+
+    .content .ads-group .ads-card2 {
+        display: none;
+    }
+}
+
+/* Mobile Phone */
+@media ( max-width: 576px ){
+    .header .top-bar .search {
+        display: none;
+    }
+
+    .header .top-bar .profile-notification {
+       justify-content: end;
+    }
+
+    .header .top-bar .profile-notification .icon:nth-child(2),
+    .header .top-bar .profile-notification .icon:nth-child(3) {
+        display: none;
+    }
+
+    /* Extra Bar */
+    .header .extra-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .header .extra-bar .search-bar {
+        border: 1px solid rgba(195, 212, 233, 0.4);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 7px 10px;
+        width: 73%;
+    }
+
+    .header .extra-bar .search-bar .icon {
+        cursor: pointer;
+    }
+
+    .header .extra-bar .filter-icon {
+        border: 1px solid rgba(195, 212, 233, 0.4);
+        padding: 7px 10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    .header .extra-bar .search-bar input {
+        border: none;
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .header .extra-bar .search-bar input:focus {
+        outline: none;
+    }
+
+    .content .ads-group .text {
+        width: 100%;
+    }
+
+    .content .ads-group .text p {
+        font-size: 1rem;
+    }
+
+    .catalog-car .popular-car {
+        justify-content: left;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        position: relative;
+        z-index: 99;
+    }
+
+    .catalog-car .popular-car::-webkit-scrollbar {
+        height: 5px;
+    }
+
+    .catalog-car .popular-car::-webkit-scrollbar-track {
+        background-color: rgba(246, 247, 249, 1);
+    }
+
+    .catalog-car .popular-car::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: linear-gradient(90deg, var(--primary) 35%, var(--information) 100%);
+    }
+
+    .catalog-car .popular-car .card {
+        min-width: 255px;
+        margin-right: 15px;
+    }
+
+    .catalog-car .recomendation-car .card {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .catalog-car .recomendation {
+        margin-top: 30px;
+    }
+
+    .catalog-car .recomendation-car .card .group {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .catalog-car .recomendation-car .card .image-car {
+        width: 70%;
+        scale: 0.7;
+        margin-top: 80px;
+        margin-left: -20px;
+    }
+
+    .catalog-car .recomendation-car .card .spesification {
+        display: block;
+        margin-top: 30px;
+        width: 30%;
+    }
+
+    .catalog-car .recomendation-car .card .image-car .shadow {
+        display: none;
+    }
+
+    .catalog-car .recomendation-car .card div {
+        margin-bottom: 30px;
+    }
+    
+    .footer .group {
+        display: inline-block;
+    }
+
+    .footer .group .logo {
+        width: 70%;
+    }
+
+    .footer .group .link {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    .footer .group .link div {
+        width: 50%;
+    }
+
+    .footer .row {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .footer .row .copyright {
+        justify-content: center;
+    }
 }
