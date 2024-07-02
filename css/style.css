@@ -727,7 +727,7 @@ input::placeholder{
 /* Extra Large */
 @media ( max-width: 1200px ){
     html {
-        font-size: 75%;
+        font-size: 90%;
     }
 
     .header .top-bar .search {
