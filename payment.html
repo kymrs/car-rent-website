@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Car Rent</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="css/payment.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Header -->
+    <section id="header" class="header">
+        <div class="top-bar">
+            <h1>MORENT</h1>
+
+            <div class="profile-notification">
+                <div class="icon">
+                    <img src="assets/icon/heart.png" alt="heart">
+                </div>
+                <div class="icon">
+                    <div class="notification-dot"></div>
+                    <img src="assets/icon/notification.png" alt="notification">
+                </div>
+                <div class="icon">
+                    <img src="assets/icon/setting.png" alt="setting">
+                </div>
+                <div class="profile">
+                    <img src="assets/img/profil.png" alt="profile">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Content -->
+     <section id="content" class="content">
+        <div class="container">
+            <div class="payment">
+
+                <!-- Billing Info -->
+                <div class="billing-info">
+                    <h1>Billing Info</h1>
+                    <div class="header">
+                        <p>Please enter your billing info</p>
+                        <p>Step 1 of 4</p>
+                    </div>
+                    <div class="input-field">
+                        <div class="row">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Your name">
+                        </div>
+                        <div class="row">
+                            <label for="phone_number">Phone Number</label>
+                            <input type="text" id="phone_number" placeholder="Phone number">
+                        </div>
+                        <div class="row">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" placeholder="Address">
+                        </div>
+                        <div class="row">
+                            <label for="town_city">Town / city</label>
+                            <input type="text" id="town_city" placeholder="Town or city">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rental Info -->
+                <div class="rental-info">
+                    <h1>Rental Info</h1>
+                    <div class="header">
+                        <p>Please select your rental date</p>
+                        <p>Step 2 of 4</p>
+                    </div>
+                    <div class="input-field">
+                        <div class="row">
+                            <label for="locations">Locations</label>
+                            <select id="locations">
+                                <option value="">Select your city</option>
+                            </select>
+                            <img src="assets/icon/arrow-down-1.png">
+                        </div>
+                        <div class="row">
+                            <label for="date">Date</label>
+                            <select id="date">
+                                <option value="">Select your date</option>
+                            </select>
+                            <img src="assets/icon/arrow-down-1.png">
+                        </div>
+                        <div class="row">
+                            <label for="time">Time</label>
+                            <select id="time">
+                                <option value="">Select your time</option>
+                            </select>
+                            <img src="assets/icon/arrow-down-1.png">
+                        </div>
+                    </div>
+                    <img src="assets/icon/mark.png" class="mark">
+                    <p class="drop">Drop - Off</p>
+                    <div class="input-field">
+                        <div class="row">
+                            <label for="locations">Locations</label>
+                            <select id="locations">
+                                <option value="">Select your city</option>
+                            </select>
+                            <img src="assets/icon/arrow-down-1.png">
+                        </div>
+                        <div class="row">
+                            <label for="date">Date</label>
+                            <select id="date">
+                                <option value="">Select your date</option>
+                            </select>
+                            <img src="assets/icon/arrow-down-1.png">
+                        </div>
+                        <div class="row">
+                            <label for="time">Time</label>
+                            <select id="time">
+                                <option value="">Select your time</option>
+                            </select>
+                            <img src="assets/icon/arrow-down-1.png">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment Method -->
+                <div class="payment-method">
+                    <h1>Payment Method</h1>
+                    <div class="header">
+                        <p>Please select your rental date</p>
+                        <p>Step 3 of 4</p>
+                    </div>
+                    <div class="credit-card">
+                        <img src="assets/icon/mark.png" class="mark">
+                        <p class="drop">Credit Card</p>
+                        <img src="assets/icon/Visa.png" alt="visa" class="visa">
+                        <div class="clear"></div>
+                        <div class="input-field">
+                            <div class="row">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" placeholder="Your name">
+                            </div>
+                            <div class="row">
+                                <label for="phone_number">Phone Number</label>
+                                <input type="text" id="phone_number" placeholder="Phone number">
+                            </div>
+                            <div class="row">
+                                <label for="address">Address</label>
+                                <input type="text" id="address" placeholder="Address">
+                            </div>
+                            <div class="row">
+                                <label for="town_city">Town / city</label>
+                                <input type="text" id="town_city" placeholder="Town or city">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-field-radio">
+                        <div class="input">
+                            <input type="radio" id="paypal" name="pay">
+                            <label for="paypal">Paypal</label>
+                        </div>
+                        <img src="assets/icon/PayPal.png" alt="paypal">
+                    </div>
+                    <div class="input-field-radio">
+                        <div class="input">
+                            <input type="radio" id="bitcoin" name="pay">
+                            <label for="bitcoin">Bitcoin</label>
+                        </div>
+                        <img src="assets/icon/Bitcoin.png" alt="bitcoin">
+                    </div>
+                </div>
+
+                <!-- Confirmation Rental -->
+                <div class="confirmation-rental">
+                    <h1>Confirmation</h1>
+                    <div class="header">
+                        <p>We are getting to the end. Just few clicks and your rental is ready!</p>
+                        <p>Step 4 of 4</p>
+                    </div>
+                    <div class="input-field-checkbox">
+                        <div class="input">
+                            <input type="checkbox" id="sending">
+                            <label for="sending">I agree with sending an Marketing and newsletter emails.</label>
+                        </div>
+                    </div>
+                    <div class="input-field-checkbox">
+                        <div class="input">
+                            <input type="checkbox" id="our-terms">
+                            <label for="our-terms">I agree with our terms and conditions and privacy policy.</label>
+                        </div>
+                    </div>
+                    <button>Rent Now</button>
+                    <img src="assets/icon/ic-security-safety.png" alt="security" class="security">
+                    <h2>All your data are safe</h2>
+                    <p>We are using the most advanced security to provide you the best experience ever.</p>
+                </div>
+            </div>
+    
+            <div class="rental-summary">
+                <h2>Rental Summary</h2>
+                <h3>Prices may change depending on the length of the rental and the price of your rental car.</h3>
+                <div class="row">
+                    <div class="col">
+                        <img src="assets/img/Look.png" alt="look">
+                    </div>
+                    <div class="col">
+                        <h1>Nissan GT - R</h1>
+                        <img src="assets/icon/Review-Star.png" alt="star" class="star">
+                        <span>440+ Reviewer</span>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="total">
+                    <div class="col-1">
+                        <p>Subtotal</p>
+                        <p class="price">$80.00</p>
+                    </div>
+                    <div class="col-2">
+                        <p>Tax</p>
+                        <p class="price">$0</p>
+                    </div>
+                </div>
+                <div class="apply-now">
+                    <input type="text" placeholder="Apply promo code">
+                    <button type="submit">Apply now</button>
+                </div>
+                <div class="total-price">
+                    <div class="row">
+                        <h4>Total Rental Price</h4>
+                        <p>Overall price and includes rental discount</p>
+                    </div>
+                    <div class="row">
+                        <h1 class="total-rental-price">$80.00</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- Footer -->
+     <section id="footer" class="footer">
+        <div class="group">
+            <div class="logo">
+                <h1>MORENT</h1>
+                <p>Our vision is to provide convenience and help increase your sales business.</p>
+            </div>
+            <div class="link">
+                <div class="about">
+                    <h2>About</h2>
+                    <a href="#">How it works</a>
+                    <a href="#">Featured</a>
+                    <a href="#">Partnership</a>
+                    <a href="#">Bussiness Relation</a>
+                </div>
+                <div class="community">
+                    <h2>Community</h2>
+                    <a href="#">Events</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Podcast</a>
+                    <a href="#">Invite a friend</a>
+                </div>
+                <div class="about">
+                    <h2>Socials</h2>
+                    <a href="#">Discord</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="copyright">
+            <p>&copy;2022 MORENT. All rights reserved</p>
+            <p>Privacy & Policy</p>
+            <p>Terms & Condition</p>
+            <p>&copy;2022 MORENT. All rights reserved</p>
+        </div>
+
+        </div>
+     </section>
+     <script src="js/script-index.js"></script>
+</body>
+</html>
