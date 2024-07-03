@@ -172,6 +172,10 @@ input::placeholder{
     background-color: rgba(246, 247, 249, 1);
 }
 
+.container label {
+    cursor: pointer;
+}
+
 /* Navbar Side */
 .navbar-side {
     width: 25%;
@@ -263,7 +267,7 @@ input::placeholder{
     padding: 30px 15px 30px 40px;
 }
 
-.pick-drop .pick-drop-group .row1 .mark
+.pick-drop .pick-drop-group .row1 .mark,
 .pick-drop .pick-drop-group .row2 .mark {
     margin-bottom: -2px;
     margin-right: 5px;
@@ -272,6 +276,7 @@ input::placeholder{
 .pick-drop .pick-drop-group .card {
     display: flex;
     margin-top: 15px;
+    justify-content: center;
 }
 
 .pick-drop p {
@@ -675,6 +680,20 @@ input::placeholder{
     .pick-drop .pick-drop-group .row1,
     .pick-drop .pick-drop-group .row2 {
         padding: 30px 15px;
+    }
+
+    .pick-drop .pick-drop-group .card .date, 
+    .pick-drop .pick-drop-group .card .time {
+        padding-left: 10px;
+    }
+
+    .pick-drop .pick-drop-group .card div {
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .pick-drop .pick-drop-group .card p {
+        display: none;
     }
 
     /* Extra Bar */
