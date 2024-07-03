@@ -847,7 +847,7 @@ input::placeholder{
 
     .pick-drop .pick-drop-group .card .date, 
     .pick-drop .pick-drop-group .card .time {
-        padding-left: 10px;
+        padding-left: 25px;
     }
 
     .pick-drop .pick-drop-group .row1,
@@ -856,7 +856,7 @@ input::placeholder{
     }
 
     .pick-drop .pick-drop-group .card div {
-        padding: 0 10px;
+        padding: 0 25px;
         text-align: center;
     }
 
