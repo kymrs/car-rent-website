@@ -664,6 +664,10 @@ input::placeholder{
 
 /* Mobile Phone */
 @media ( max-width: 576px ){
+    html {
+        font-size: 82.5%;
+    }
+
     .header .top-bar .search {
         display: none;
     }
