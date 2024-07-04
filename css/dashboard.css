@@ -1,0 +1,877 @@
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Root */
+
+:root {
+    --primary: #3563E9;
+    --secondary-500: #1A202C;
+    --secondary-400: #596780;
+    --secondary-300: #90A3BF;
+    --information: #54A6FF;
+    --footer-text: rgba(19, 19, 19, 0.6);
+}
+
+.clear {
+    clear: both;
+}
+
+/* My Style */
+body {
+    font-size: 1.2rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+input::placeholder{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Header */
+.header {
+    margin: 30px 6%;
+}
+
+.header .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .top-bar h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.header .top-bar .search {
+    border: 1px solid rgba(195, 212, 233, 0.4);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 10px;
+    margin-left: -500px;
+}
+
+.header .extra-bar {
+    display: none;
+}
+
+
+.header .top-bar .search .icon {
+    scale: 0.8;
+}
+
+.header .top-bar .search .icon:hover {
+    scale: 0.75;
+}
+
+.header .top-bar .icon {
+    transition: 300ms;
+}
+
+.header .top-bar .icon {
+    cursor: pointer;
+}
+
+.header .top-bar .search input {
+    border: none;
+    width: 270px;
+    padding: 0 5px;
+    color: var(--secondary-500);
+}
+
+.header .top-bar .search input:focus {
+    outline: none;
+}
+
+.header .top-bar .profile-notification {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+}
+
+.header .top-bar .profile-notification .icon {
+    border: 1px solid var(--secondary-300);
+    border-radius: 50px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.header .top-bar .profile-notification .icon img {
+    scale: 0.8;
+}
+
+.header .top-bar .profile-notification .icon .notification-dot {
+    content: "";
+    position: absolute;
+    top: 37px;
+    background-color: rgba(255, 68, 35, 1);
+    width: 8.5px;
+    height: 8.5px;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+.header .top-bar .profile-notification .icon:nth-child(2) {
+    border: 1px solid var(--secondary-300);
+}
+
+.header .top-bar .profile-notification .profile:hover {
+    cursor: pointer;
+}
+
+/* Content */
+
+/* Side Bar */
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(246, 247, 249, 1);
+}
+
+aside {
+    width: 25%;
+    background-color: #fff;
+    min-height: 950px;
+    box-sizing: border-box;
+    padding: 20px 40px;
+    margin-top: 5px;
+}
+
+aside h3 {
+    color: var(--secondary-300);
+    font-size: 0.8rem;
+    margin: 20px 0;
+}
+
+aside span {
+    color: var(--secondary-400);
+    font-size: 1rem;
+}
+
+aside .main-menu:nth-child(1) .menu:nth-child(2) {
+    background-color: var(--primary);
+}
+
+aside .main-menu:nth-child(1) .menu:nth-child(2) a {
+    color: #fff;
+}
+
+aside .main-menu .menu {
+    display: flex;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+aside .main-menu .menu a {
+    color: var(--secondary-300);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    position: relative;
+    top: 4px;
+}
+
+aside .main-menu .switch {
+    float: right;
+    margin-top: -3.3rem;
+}
+
+aside .logout {
+    display: flex;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+aside .logout a {
+    color: var(--secondary-300);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    position: relative;
+    top: 4px;
+}
+
+/* Main */
+
+main {
+    width: 70%;
+    margin-right: 6%;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Details Rental */
+
+.details-rental {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 50%;
+    padding: 25px 25px 10px;
+    box-sizing: border-box;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.details-rental h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--secondary-500);
+    margin-bottom: 15px;
+}
+
+.details-rental .maps {
+    width: 100%;
+}
+
+.details-rental .maps img {
+    width: 100%;
+}
+
+.details-rental .row {
+    margin: 35px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.details-rental .row .col:nth-child(2) {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.details-rental .row .col img {
+    width: 100%;
+}
+
+.details-rental .row .col h1 {
+    margin-top: 25px;
+    font-size: 1.6rem;
+    color: var(--secondary-500);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.details-rental .col span {
+    font-size: 0.9rem;
+    color: var(--secondary-400);
+    font-weight: 500;
+}
+
+.details-rental .col span:nth-child(3) {
+    float: right;
+    margin-top: -35px;
+}
+
+/* Pick Drop */
+.pick-drop {
+    margin-top: 30px;
+}
+
+.pick-drop .pick-drop-group .row1,
+.pick-drop .pick-drop-group .row2 {
+    background-color:#fff;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.pick-drop .pick-drop-group .row1 .mark,
+.pick-drop .pick-drop-group .row2 .mark {
+    margin-bottom: -2px;
+    margin-right: 5px;
+}
+
+.pick-drop .pick-drop-group .card {
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.pick-drop .pick-drop-group .card div {
+    width: 100%;
+}
+
+.pick-drop p {
+    display: inline-block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: rgba(26, 32, 44, 1);
+    font-weight: 600;
+}
+
+.pick-drop .pick-drop-group .card h1 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: rgba(26, 32, 44, 1);
+    font-weight: 700;
+}
+
+.pick-drop .pick-drop-group .card select {
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 7px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: var(--secondary-300);
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.pick-drop .pick-drop-group .card select:focus {
+    outline: none;
+}
+
+.pick-drop .pick-drop-group .card img {
+    position: relative;
+    left: 100%;
+    bottom: 17px;
+}
+
+.pick-drop .pick-drop-group .card div {
+    padding-right: 25px;
+}
+
+.pick-drop .pick-drop-group .card .location, 
+.pick-drop .pick-drop-group .card .date {
+    border-right: 1px solid rgba(195, 212, 233, 0.6);
+}
+
+.pick-drop .pick-drop-group .card .date, 
+.pick-drop .pick-drop-group .card .time {
+    padding-left: 25px;
+}
+
+/* Total Price */
+.details-rental .line {
+    height: 2px;
+    background-color: rgba(195, 212, 233, 0.4);
+    width: 100%;
+    margin-top: 40px;
+}
+
+.details-rental .total-price {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.details-rental .total p.price {
+    font-size: 1rem;
+    color: var(--secondary-500);
+    font-weight: 600;
+}
+
+.details-rental .total-price {
+    display: flex;
+}
+
+.details-rental .total-price .row {
+    display: inline-block;
+}
+
+.details-rental .total-price .row h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--secondary-500);
+    margin-bottom: 10px;
+}
+
+.details-rental .total-price .row p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--secondary-300);
+    line-height: 1.3rem;
+}
+
+.details-rental .total-price .row h1.total-rental-price {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--secondary-500);
+    position: relative;
+    top: 10px;
+}
+
+.details-rental .input-field {
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.details-rental .input-field .row {
+    width: 47%;
+    margin-bottom: 20px;
+}
+
+.details-rental .input-field .row label {
+    display: block;
+    font-size: 1rem;
+    color: var(--secondary-500);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.details-rental .input-field .row select {
+    width: 100%;
+    border: none;
+    background-color: rgba(246, 247, 249, 1);
+    padding: 20px 25px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: var(--secondary-300);
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.details-rental .input-field .row img {
+    position: relative;
+    left: 90%;
+    bottom: 37px;
+    cursor: pointer;
+}
+
+.details-rental .input-field .row select:focus {
+    outline: none;
+}
+
+/* Top & Recent Transaction */
+main {
+    height: 100%;
+}
+
+main .right-side {
+    width: 50%;
+}
+
+/* Top Rental */
+.top-rental {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.top-rental .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.top-rental .header h1 {
+    color: var(--secondary-500);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.top-rental .chart-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-rental .chart-group .row:nth-child(1){
+    width: 47%;
+    margin-right: 20px;
+}
+
+.top-rental .chart-group .row:nth-child(2){
+    width: 53%;
+}
+
+.top-rental .chart-group .row .chart {
+    position: relative;
+    display: inline-block;
+}
+
+.top-rental .chart-group .row img {
+    width: 100%;
+    display: inline;
+}
+
+.top-rental .chart-group .row .total {
+    display: inline;
+}
+
+.top-rental .chart-group .row h1 {
+    color: var(--secondary-500);
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.top-rental .chart-group .row p {
+    font-size: 1rem;
+    color: var(--secondary-300);
+    font-weight: 500;
+    text-align: center;
+}
+
+.top-rental .chart-group .row .col {
+    margin-bottom: 25px;
+}
+
+.top-rental .chart-group .row .col:last-child {
+    margin-bottom: 0;
+}
+
+.top-rental .chart-group .row .col span {
+    color: var(--secondary-300);
+    font-weight: 600;
+    font-size: 0.9rem;
+    position: relative;
+    left: 10px;
+    bottom: 4.5px;
+}
+
+.top-rental .chart-group .row .col h2 {
+    color: var(--secondary-500);
+    font-weight: 600;
+    font-size: 0.9rem;
+    float: right;
+}
+
+.top-rental .chart-group .row .col .mark {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    float: left;
+}
+
+.top-rental .chart-group .row .col:nth-child(1) .mark {
+    background-color: rgba(13, 53, 89, 1);
+}
+
+.top-rental .chart-group .row .col:nth-child(2) .mark {
+    background-color: rgba(23, 93, 156, 1);
+}
+
+.top-rental .chart-group .row .col:nth-child(3) .mark {
+    background-color: rgba(33, 133, 222, 1);
+}
+
+.top-rental .chart-group .row .col:nth-child(4) .mark {
+    background-color: rgba(99, 169, 232, 1);
+}
+
+.top-rental .chart-group .row .col:nth-child(5) .mark {
+    background-color: rgba(166, 206, 242, 1);
+}
+
+/* Recent Transaction */
+.recent-transaction {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.recent-transaction .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.recent-transaction .header h1 {
+    color: var(--secondary-500);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.recent-transaction .header a {
+    color: var(--primary);
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.recent-transaction .row {
+    margin: 35px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent-transaction .row .col:nth-child(1) {
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+
+.recent-transaction .row .col img {
+    width: 100%;
+}
+
+.recent-transaction .row .col:nth-child(2) {
+    width: 70%;
+    margin-left: 20px;
+}
+
+.recent-transaction .row .col h1 {
+    font-size: 1rem;
+    color: var(--secondary-500);
+    font-weight: 700;
+    margin-bottom: 15px;    
+}
+
+.recent-transaction .col span {
+    font-size: 0.8rem;
+    color: var(--secondary-300);
+    font-weight: 500;
+}
+
+.recent-transaction .col span:nth-child(3) {
+    position: relative;
+    top: 5px;
+}
+
+.recent-transaction .col h2 {
+    font-size: 1rem;
+    color: var(--secondary-500);
+    font-weight: 700;
+    float: right;
+    position: relative;
+    top: 4px;
+}
+
+.recent-transaction .col span:nth-child(3) {
+    float: right;
+    margin-top: -35px;
+}
+
+.recent-transaction .line {
+    height: 2px;
+    background-color: rgba(195, 212, 233, 0.4);
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+/* Media Queries */
+
+/* Extra Large */
+@media ( max-width: 1200px ){
+    html {
+        font-size: 90%;
+    }
+
+    .header .top-bar .search {
+        margin-left: -200px;
+    }
+
+}
+
+/* Laptop */
+@media ( max-width: 992px ){
+    .header .top-bar .search {
+        margin-left: -50px;
+    }
+
+    .header .top-bar .search input {
+        width: 200px;
+    }
+
+    aside {
+        display: none;
+    }
+
+    main {
+        width: 100%;
+        margin: 30px 6%;
+    }
+}
+
+/* Tablet */
+@media ( max-width: 768px ){
+    .header .top-bar .search {
+        margin-left: 0;
+    }
+
+    .header .top-bar .profile-notification {
+        width: 150px;
+    }
+
+    .header .top-bar .profile-notification .icon:nth-child(1) {
+        display: none;
+    }
+
+    main {
+        display: inline-block;
+    }
+
+    main .right-side {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    main .details-rental,
+    main .top-rental,
+    main .recent-transaction {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+}
+
+/* Mobile Phone */
+@media ( max-width: 576px ){
+    html {
+        font-size: 82.5%;
+    }
+
+    .header .top-bar .search {
+        display: none;
+    }
+
+    .header .top-bar .profile-notification {
+       justify-content: end;
+    }
+
+    .header .top-bar .profile-notification .icon:nth-child(2),
+    .header .top-bar .profile-notification .icon:nth-child(3) {
+        display: none;
+    }
+
+    .pick-drop {
+        display: none;
+    }
+
+    .top-rental .chart-group {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .top-rental .chart-group .row:nth-child(1){
+        width: 100%;
+        text-align: center;
+        margin-right: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .top-rental .chart-group .row:nth-child(2){
+        width: 100%;
+    }
+
+    .details-rental {
+        margin: 30px 0;
+    }
+
+    .details-rental .input-field {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .details-rental .input-field .row {
+        width: 100%;
+        display: block;
+    }
+
+    .details-rental .input-field p {
+        display: inline-block;
+        font-size: 1rem;
+        margin-bottom: 5px;
+        color: rgba(26, 32, 44, 1);
+        font-weight: 600;
+        position: relative;
+        bottom: 3px;
+        left: 10px;
+    }
+
+    .details-rental .total-price .row h1.total-rental-price {
+        font-size: 1.4rem;
+    }
+
+    .details-rental .col span:nth-child(3) {
+        margin-top: 4px;
+    }
+
+    .details-rental .row .col:nth-child(1) {
+        width: 40%;
+    }
+
+    .details-rental .row .col:nth-child(2) {
+        width: 60%;
+    }
+
+    .details-rental .row .col h1 {
+        font-size: 1.4rem;
+    }
+
+    .details-rental .line {
+        margin-top: 0px;
+    }
+
+    .recent-transaction .row {
+        margin: 20px 0 0;
+    }
+
+    .recent-transaction .line {
+        margin-top: 15px;
+    }
+}

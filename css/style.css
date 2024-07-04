@@ -500,7 +500,7 @@ input::placeholder{
     text-decoration: line-through;
 }
 
-.catalog-car .popular-car .card .footer-card button {
+.catalog-car .popular-car .card .footer-card a {
     padding: 15px 20px;
     background-color: var(--primary);
     border-radius: 10px;
@@ -510,9 +510,10 @@ input::placeholder{
     font-weight: 500;
     cursor: pointer;
     transition: 300ms;
+    text-decoration: none;
 }
 
-.catalog-car .popular-car .card .footer-card button:hover {
+.catalog-car .popular-car .card .footer-card a:hover {
     scale: 0.95;
 }
 
@@ -633,7 +634,7 @@ input::placeholder{
     text-decoration: line-through;
 }
 
-.catalog-car .recomendation-car .card .footer-card button {
+.catalog-car .recomendation-car .card .footer-card a {
     padding: 15px 20px;
     background-color: var(--primary);
     border-radius: 10px;
@@ -643,9 +644,10 @@ input::placeholder{
     font-weight: 500;
     cursor: pointer;
     transition: 300ms;
+    text-decoration: none;
 }
 
-.catalog-car .recomendation-car .card .footer-card button:hover {
+.catalog-car .recomendation-car .card .footer-card a:hover {
     scale: 0.95;
 }
 

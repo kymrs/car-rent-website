@@ -878,7 +878,7 @@ input::placeholder{
     }
 
     .container .payment .confirmation-rental .header p:last-child{
-        top: 10px;
+        top: 5px;
         position: relative;
     }
 

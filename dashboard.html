@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Car Rent</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="css/dashboard.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    
+    <!-- Header -->
+    <section id="header" class="header">
+        <div class="top-bar">
+            <h1>MORENT</h1>
+
+            <div class="search">
+                <div class="icon">
+                    <img src="assets/icon/search-normal.png" alt="search">
+                </div>
+                <input type="text" name="search" id="search" placeholder="Search something here">
+                <div class="icon">
+                    <img src="assets/icon/filter.png" alt="filter">
+                </div>
+            </div>
+
+            <div class="profile-notification">
+                <div class="icon">
+                    <img src="assets/icon/heart.png" alt="heart">
+                </div>
+                <div class="icon">
+                    <div class="notification-dot"></div>
+                    <img src="assets/icon/notification.png" alt="notification">
+                </div>
+                <div class="icon">
+                    <img src="assets/icon/setting.png" alt="setting">
+                </div>
+                <div class="profile">
+                    <img src="assets/img/profil.png" alt="profile">
+                </div>
+            </div>
+        </div>
+
+        <div class="extra-bar">
+            <div class="search-bar">
+                <div class="icon">
+                    <img src="assets/icon/search-normal.png" alt="search">
+                </div>
+                <input type="text" name="search" id="search" placeholder="Search something here">
+            </div>
+            <div class="filter-icon">
+                <img src="assets/icon/filter.png" alt="filter">
+            </div>
+        </div>
+    </section>
+
+    <section id="content" class="content">
+
+        <!-- Sidebar -->
+        <aside>
+            <div class="main-menu">
+                <h3>MAIN MENU</h3>
+                <div class="menu">
+                    <img src="assets/icon/menu/home.png">               
+                    <a href="#">Sport</a>
+                </div>
+                <div class="menu">
+                    <img src="assets/icon/menu/car.png">               
+                    <a href="#">Suv</a>
+                </div>
+                <div class="menu">
+                    <img src="assets/icon/menu/chart.png">               
+                    <a href="#">MPV</a>
+                </div>
+                <div class="menu">
+                    <img src="assets/icon/menu/empty-wallet-change.png">               
+                    <a href="#">Sedan</a>
+                </div>
+                <div class="menu">
+                    <img src="assets/icon/menu/message.png">               
+                    <a href="#">Coupe</a>
+                </div>
+                <div class="menu">
+                    <img src="assets/icon/menu/calendar.png">               
+                    <a href="#">Hatchback</a>
+                </div>
+            </div>
+            <div class="main-menu">
+                <h3>PREFERENCES</h3>
+                <div class="menu">
+                    <img src="assets/icon/menu/setting.png">               
+                    <a href="#">Settings</a>
+                </div>
+                <div class="menu">
+                    <img src="assets/icon/menu/info-circle.png">               
+                    <a href="#">Help & Center</a>
+                </div>
+                <div class="menu">
+                    <img src="assets/icon/menu/briefcase.png">               
+                    <a href="#">Dark Mode</a>
+                </div>
+                <img src="assets/icon/menu/Group 427320609.png" class="switch">                
+            </div>
+            <div class="logout">
+                <img src="assets/icon/menu/logout.png">               
+                <a href="#">Logout</a>
+            </div>
+        </aside>
+
+        <!-- Content -->
+        <main>
+            <!-- Details Rental -->
+            <div class="details-rental">
+                <h2>Details Rental</h2>
+                <div class="maps">
+                    <img src="assets/img/Maps.png" alt="maps">
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="assets/img/Look.png" alt="look">
+                    </div>
+                    <div class="col">
+                        <h1>Nissan GT - R</h1>
+                        <span>Sport Car</span>
+                        <span>#9761</span>
+                    </div>
+                </div>
+
+                <!-- Pick Drop -->
+                <div class="pick-drop">
+                    <div class="pick-drop-group">
+                        <div class="row1">
+                            <img src="assets/icon/mark.png" class="mark">
+                            <p>Pick - Up</p>
+                            <div class="card">
+                                <div class="location">
+                                    <h1>Locations</h1>
+                                    <select name="" id="">
+                                        <option value="">City</option>
+                                    </select>
+                                    <img src="assets/icon/arrow-down.png">
+                                </div>
+                                <div class="date">
+                                    <h1>Date</h1>
+                                    <select name="" id="">
+                                        <option value="">Date</option>
+                                    </select>
+                                    <img src="assets/icon/arrow-down.png">
+                                </div>
+                                <div class="time">
+                                    <h1>Time</h1>
+                                    <select name="" id="">
+                                        <option value="">Time</option>
+                                    </select>
+                                    <img src="assets/icon/arrow-down.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row2">
+                            <img src="assets/icon/mark.png" class="mark">
+                            <p>Drop - Off</p>
+                            <div class="card">
+                                <div class="location">
+                                    <h1>Locations</h1>
+                                    <select name="" id="">
+                                        <option value="">City</option>
+                                    </select>
+                                    <img src="assets/icon/arrow-down.png">
+                                </div>
+                                <div class="date">
+                                    <h1>Date</h1>
+                                    <select name="" id="">
+                                        <option value="">Date</option>
+                                    </select>
+                                    <img src="assets/icon/arrow-down.png">
+                                </div>
+                                <div class="time">
+                                    <h1>Time</h1>
+                                    <select name="" id="">
+                                        <option value="">Time</option>
+                                    </select>
+                                    <img src="assets/icon/arrow-down.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Input Select -->
+                <div class="input-field">
+                    <img src="assets/icon/mark.png" class="mark">
+                    <p>Pick - Up</p>
+                    <div class="row">
+                        <label for="locations">Locations</label>
+                        <select id="locations">
+                            <option value="">Select your city</option>
+                        </select>
+                        <img src="assets/icon/arrow-down-1.png">
+                    </div>
+                    <div class="row">
+                        <label for="date">Date</label>
+                        <select id="date">
+                            <option value="">Select your date</option>
+                        </select>
+                        <img src="assets/icon/arrow-down-1.png">
+                    </div>
+                    <div class="row">
+                        <label for="time">Time</label>
+                        <select id="time">
+                            <option value="">Select your time</option>
+                        </select>
+                        <img src="assets/icon/arrow-down-1.png">
+                    </div>
+                </div>
+                
+                <!-- Input Select -->
+                <div class="input-field">
+                    <img src="assets/icon/mark.png" class="mark">
+                    <p>Pick - Up</p>
+                    <div class="row">
+                        <label for="locations">Locations</label>
+                        <select id="locations">
+                            <option value="">Select your city</option>
+                        </select>
+                        <img src="assets/icon/arrow-down-1.png">
+                    </div>
+                    <div class="row">
+                        <label for="date">Date</label>
+                        <select id="date">
+                            <option value="">Select your date</option>
+                        </select>
+                        <img src="assets/icon/arrow-down-1.png">
+                    </div>
+                    <div class="row">
+                        <label for="time">Time</label>
+                        <select id="time">
+                            <option value="">Select your time</option>
+                        </select>
+                        <img src="assets/icon/arrow-down-1.png">
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="total-price">
+                    <div class="row">
+                        <h4>Total Rental Price</h4>
+                        <p>Overall price and includes rental discount</p>
+                    </div>
+                    <div class="row">
+                        <h1 class="total-rental-price">$80.00</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top & Recent Transaction -->
+            <div class="right-side">
+                <div class="top-rental">
+                    <div class="header">
+                        <h1>Top 5 Car Rental</h1>
+                        <img src="assets/icon/more.png" alt="more">
+                    </div>
+                    <div class="chart-group">
+                        <div class="row">
+                            <div class="chart">
+                                <img src="assets/img/Chart.png" alt="chart">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="mark"></div>
+                                <span>Sport Car</span>
+                                <h2>17,439</h2>
+                            </div>
+                            <div class="col">
+                                <div class="mark"></div>
+                                <span>Suv</span>
+                                <h2>9,478</h2>
+                            </div>
+                            <div class="col">
+                                <div class="mark"></div>
+                                <span>Coupe</span>
+                                <h2>18,197</h2>
+                            </div>
+                            <div class="col">
+                                <div class="mark"></div>
+                                <span>Hatchback</span>
+                                <h2>12,510</h2>
+                            </div>
+                            <div class="col">
+                                <div class="mark"></div>
+                                <span>MPV</span>
+                                <h2>14.406</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recent-transaction">
+                    <div class="header">
+                        <h1>Recent Transaction</h1>
+                        <a href="#">View All</a>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="image">
+                                <img src="assets/img/transaction/car.png" alt="look">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h1>Nissan GT - R</h1>
+                            <span>Sport Car</span>
+                            <span>20 July</span>
+                            <h2>$80.00</h2>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="image">
+                                <img src="assets/img/transaction/car-1.png" alt="look">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h1>Koegnigsegg</h1>
+                            <span>Sport Car</span>
+                            <span>20 July</span>
+                            <h2>$99.00</h2>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="image">
+                                <img src="assets/img/transaction/car-2.png" alt="look">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h1>Rolls - Royce</h1>
+                            <span>Sport Car</span>
+                            <span>18 July</span>
+                            <h2>$96.00</h2>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="image">
+                                <img src="assets/img/transaction/car-3.png" alt="look">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h1>CR - V</h1>
+                            <span>SUV</span>
+                            <span>17 July</span>
+                            <h2>$80.00</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </section>
+    
+    
+</body>
+</html>
