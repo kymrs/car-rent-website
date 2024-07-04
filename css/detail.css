@@ -65,6 +65,10 @@ body {
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 input::placeholder{
     font-family: "Plus Jakarta Sans", sans-serif;
 }
@@ -400,7 +404,7 @@ input::placeholder{
     text-decoration: line-through;
 }
 
-.detail-group .row:nth-child(2) .footer button {
+.detail-group .row:nth-child(2) .footer a {
     padding: 20px 30px;
     background-color: var(--primary);
     border-radius: 10px;
@@ -411,9 +415,10 @@ input::placeholder{
     cursor: pointer;
     transition: 300ms;
     margin-top: -10px;
+    text-decoration: none;
 }
 
-.detail-group .row:nth-child(2) .footer button:hover {
+.detail-group .row:nth-child(2) .footer a:hover {
     scale: 0.95;
 }
 
@@ -724,17 +729,9 @@ input::placeholder{
     margin-right: -400px;
 }
 
-.footer .copyright p:nth-child(4) {
-    display: none;
-}
-
 .footer .copyright p {
     cursor: pointer;
     margin-bottom: 20px;
-}
-
-.footer .copyright p:nth-child(4) {
-    width: 100%;
 }
 
 /* Media Queries */
@@ -962,11 +959,16 @@ input::placeholder{
     }
 
     .footer .copyright p:nth-child(1) {
-        display: none;
+        order: 3;
+        width: 100%;
     }
 
-    .footer .copyright p:nth-child(4) {
-        display: inline-block;
+    .footer .copyright p:nth-child(2) {
+        order: 1;
+    }
+
+    .footer .copyright p:nth-child(3) {
+        order: 2;
     }
 
     .footer .copyright p {

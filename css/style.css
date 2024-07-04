@@ -65,6 +65,10 @@ body {
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 input::placeholder{
     font-family: "Plus Jakarta Sans", sans-serif;
 }
@@ -274,6 +278,7 @@ input::placeholder{
     background-color:#fff;
     border-radius: 10px;
     padding: 30px 15px 30px 40px;
+    width: 40%;
 }
 
 .pick-drop .pick-drop-group .row1 .mark,
@@ -303,16 +308,29 @@ input::placeholder{
     font-weight: 700;
 }
 
-.pick-drop .pick-drop-group .card p {
-    font-size: 0.8rem;
-    margin-bottom: 5px;
-    margin-right: 20px;
+.pick-drop .pick-drop-group .card select {
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 7px;
+    font-family: "Plus Jakarta Sans", sans-serif;
     color: var(--secondary-300);
     cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.pick-drop .pick-drop-group .card select:focus {
+    outline: none;
+}
+
+.pick-drop .pick-drop-group .card .select2{
+    display: none;
 }
 
 .pick-drop .pick-drop-group .card img {
-    cursor: pointer;
+    position: relative;
+    left: 100%;
+    bottom: 17px;
 }
 
 .pick-drop .pick-drop-group .card div {
@@ -331,16 +349,21 @@ input::placeholder{
 
 .pick-drop .pick-drop-group .icon {
     background-color: var(--primary);
-    scale: 0.8;
-    padding: 20px;
+    width: 50px;
+    height: 50px;
     border-radius: 10px;
     cursor: pointer;
     transition: 300ms;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
 }
 
 .pick-drop .pick-drop-group .icon:hover {
-    scale: 0.75;
+    scale: 0.93;
+}
+
+.pick-drop .pick-drop-group .icon img {
+    scale: 0.5;
 }
 
 /* Catalog Car */
@@ -726,17 +749,9 @@ input::placeholder{
     margin-right: -400px;
 }
 
-.footer .copyright p:nth-child(4) {
-    display: none;
-}
-
 .footer .copyright p {
     cursor: pointer;
     margin-bottom: 20px;
-}
-
-.footer .copyright p:nth-child(4) {
-    width: 100%;
 }
 
 /* Media Queries */
@@ -770,6 +785,12 @@ input::placeholder{
         width: 200px;
     }
 
+    .pick-drop .pick-drop-group .row1,
+    .pick-drop .pick-drop-group .row2 {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
     .pick-drop .pick-drop-group {
         display: inline-block;
         justify-content: center;
@@ -780,7 +801,6 @@ input::placeholder{
     }
 
     .pick-drop .pick-drop-group .icon {
-        width: 7%;
         position: relative;
         z-index: 999;
         left: 50%;
@@ -854,6 +874,36 @@ input::placeholder{
         padding-left: 25px;
     }
 
+    .pick-drop .pick-drop-group .card .location {
+        padding-left: 0;
+    }
+
+    .pick-drop .pick-drop-group .card .time {
+        padding-right: 0;
+    }
+
+    .pick-drop .pick-drop-group .card select {
+        text-align: center;
+    }
+    
+
+    .pick-drop .pick-drop-group .card .select1{
+        display: none;
+    }
+
+    .pick-drop .pick-drop-group .card .select2{
+        display: inline-block;
+    }
+
+    .pick-drop .pick-drop-group .card img {
+        left: 60%;
+        bottom: 15px;
+    }
+
+    .pick-drop .pick-drop-group .card .location img {
+        left: 42%;
+    }
+
     .pick-drop .pick-drop-group .row1,
     .pick-drop .pick-drop-group .row2 {
         padding: 30px 15px;
@@ -862,10 +912,6 @@ input::placeholder{
     .pick-drop .pick-drop-group .card div {
         padding: 0 25px;
         text-align: center;
-    }
-
-    .pick-drop .pick-drop-group .card p {
-        display: none;
     }
 
     /* Extra Bar */
@@ -995,11 +1041,16 @@ input::placeholder{
     }
 
     .footer .copyright p:nth-child(1) {
-        display: none;
+        order: 3;
+        width: 100%;
     }
 
-    .footer .copyright p:nth-child(4) {
-        display: inline-block;
+    .footer .copyright p:nth-child(2) {
+        order: 1;
+    }
+
+    .footer .copyright p:nth-child(3) {
+        order: 2;
     }
 
     .footer .copyright p {
