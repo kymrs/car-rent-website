@@ -870,6 +870,12 @@ input::placeholder{
 
     .container .payment .confirmation-rental .header p:first-child{
         width: 68%;
+        line-height: 1.4rem;
+    }
+
+    .container .payment .confirmation-rental .header p:last-child{
+        top: 10px;
+        position: relative;
     }
 
     .container .payment .confirmation-rental .input-field-checkbox .input label {
