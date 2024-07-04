@@ -870,8 +870,9 @@ input::placeholder{
 
     .container .payment .confirmation-rental .input-field-checkbox .input label {
         float: right;
-        width: 85%;
+        width: 75%;
         line-height: 1.4rem;
+        left: -30px;
     }
 
     .container .payment .confirmation-rental .input-field-checkbox input {
