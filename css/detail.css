@@ -897,6 +897,10 @@ input::placeholder{
         top: 22px;
     }
 
+    .reviews .card p.description {
+        padding-left: 66px;
+    }
+
     .reviews .show-all img {
         left: 44%;
     }
