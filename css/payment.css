@@ -868,6 +868,10 @@ input::placeholder{
         width: 100%;
     }
 
+    .container .payment .confirmation-rental .header p:first-child{
+        width: 68%;
+    }
+
     .container .payment .confirmation-rental .input-field-checkbox .input label {
         float: right;
         width: 75%;
