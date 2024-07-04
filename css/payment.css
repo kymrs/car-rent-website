@@ -827,6 +827,10 @@ input::placeholder{
         padding: 10px 15px;
     }
 
+    .container .rental-summary .apply-now input {
+        bottom: 0;
+    }
+
     .container .payment .billing-info {
         margin-top: 30px;
     }
