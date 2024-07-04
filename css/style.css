@@ -312,6 +312,7 @@ input::placeholder{
     width: 100%;
     border: none;
     box-sizing: border-box;
+    background-color: #fff;
     border-radius: 7px;
     font-family: "Plus Jakarta Sans", sans-serif;
     color: var(--secondary-300);
